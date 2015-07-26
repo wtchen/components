@@ -1,0 +1,38 @@
+.componentsContainer {
+    .component {
+        .componentButton {
+            vertical-align: top;
+            padding: 10px 20px;
+            margin: 10px;
+            background: #ECF0F1;
+            color: #454545;
+            text-align: center;
+            border: 0;
+            border-bottom: 2px solid #DADEDF;
+            cursor: pointer;
+            @media (max-width: 599px) {
+                background: #ECF0C8;
+                padding: 20px 10px;
+            }
+            &:hover {
+                color: #FFFFFF;
+                background: #6099BC;
+                border-bottom-color: #3A5C71;
+                @media (max-width: 599px) {
+                    background: #609996;
+                }
+            }
+            &:focus {
+                outline: none;
+            }
+            &::-moz-focus-inner {
+                border: 0;
+            }
+        }
+        .componentText {
+            font-family: Century Gothic, sans-serif;
+            padding-right: 100%;
+            margin: 0 10px;
+        }
+    }
+}
